@@ -89,9 +89,9 @@ h1, h2, h3, p { margin-top: 0; }
 .demo-step-number { color: #899789; font-size: 9px; }
 .demo-screen { display: flex; flex-direction: column; min-height: 365px; }
 .demo-screen-meta { display: flex; justify-content: space-between; gap: 10px; padding: 18px 23px 0; color: #899789; font: 600 10px/1 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
-.terminal-content { flex: 1; padding: 27px 23px 18px; overflow: hidden; }
+.terminal-content { flex: 1; padding: 27px 23px 18px; overflow-x: auto; overflow-y: hidden; }
 .terminal-lines { font: 500 clamp(10px, .82vw, 12px)/1.75 var(--mono); white-space: pre; color: #b7c2b5; }
-.terminal-line { min-height: 1.75em; overflow: hidden; text-overflow: clip; }
+.terminal-line { min-height: 1.75em; }
 .terminal-line.command { color: #f0f4e9; }
 .terminal-line.success { color: var(--success); }
 .terminal-line.danger { color: var(--danger); font-weight: 700; }

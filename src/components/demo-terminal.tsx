@@ -119,7 +119,7 @@ export function DemoTerminal() {
             <span>{frame.eyebrow}</span>
             <span>{frame.id === "drift" ? "CONTRACT MISMATCH" : "CAPABILITY TRACE"}</span>
           </div>
-          <div className="terminal-content" aria-live="off">
+          <div className="terminal-content" role="region" tabIndex={0} aria-label="Animated terminal output" aria-live="off">
             <TerminalLines lines={visibleLines(frame, offset)} />
             <span className="terminal-cursor" aria-hidden="true" />
           </div>
