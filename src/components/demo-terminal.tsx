@@ -105,7 +105,7 @@ export function DemoTerminal() {
       </div>
 
       {reducedMotion ? (
-        <div className="demo-static" aria-label="Complete demo sequence">
+        <div className="demo-static" role="region" tabIndex={0} aria-label="Complete demo sequence">
           {demoFrames.map((step) => (
             <section id={`demo-${step.id}`} key={step.id} className="demo-static-step">
               <h3>{step.label} <span>· {step.eyebrow}</span></h3>
